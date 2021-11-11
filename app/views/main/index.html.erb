@@ -1,0 +1,29 @@
+<div style="display:grid; grid-template-columns: repeat(4, minmax(0, 1fr));">
+  <div>
+    <h1>Genres</h1>
+    <% @genres.each do |genre| %>
+      <div><%= link_to genre.title, genre %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <h1>Videos</h1>
+    <% @videos.each do |video| %>
+      <div><%= link_to video.title, video %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <h1>Categories</h1>
+    <% @categories.each do |category| %>
+      <div><%= link_to category.title, category %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <h1>Tags</h1>
+    <% @tags.each do |tag| %>
+      <div><%= link_to tag.title, tag %></div>
+    <% end %>
+  </div>
+</div>
